@@ -1,0 +1,14 @@
+.horizontal_scroll_div img{
+    width: 50rem;
+}
+
+.horizontal-scroll ul li img{
+    border-radius: 20px;
+    border: 2px solid ;
+    width: 23rem;
+    height: 15rem;
+    /* margin-left: 20px; */
+}
+/* .horizontal-scroll-innerdiv{
+    padding: 5px;
+} */

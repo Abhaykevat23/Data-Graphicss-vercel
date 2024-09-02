@@ -1,0 +1,40 @@
+#transform-img1,
+#transform-img2,
+#transform-img3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+
+}
+#transform-img1{
+  transform:
+    perspective(50em)
+    rotateY(25deg) 
+    rotate(-5deg);
+}
+#transform-img2{
+  transform:
+    perspective(50em)
+    rotateY(-25deg) 
+    rotate(5deg);
+}
+#transform-img3{
+  transform:
+    perspective(50em)
+    rotatex(25deg) ;
+}
+
+#f-image{
+  background-image: url("../../assets/blurBG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  height: 100%;
+}

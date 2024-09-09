@@ -6,24 +6,10 @@ function SignUp() {
     const [Credentials, setCredentials] = useState({ firstname: "", lastname: "", email: "", password: "", cpassword: "" });
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     const keyDownHandler = event => {
-    //         if (event.key === 'Enter') {
-    //             event.preventDefault();
-    //             // Call submit function here
-    //             handleSubmit();
-    //         }
-    //     };
-    //     document.addEventListener('keydown', keyDownHandler);
-    //     return () => {
-    //         document.removeEventListener('keydown', keyDownHandler);
-    //     };
-    // }, []);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { firstname, lastname, email, password } = Credentials;
-        const response = await fetch("data-graphicss-api.vercel.app/api/auth/createuser", {
+        const response = await fetch("https://data-graphicss-api.vercel.app/api/auth/createuser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

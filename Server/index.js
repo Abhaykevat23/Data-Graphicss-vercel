@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(cors(
   {
-    origin : ["data-graphicss-vercel.vercel.app"],
+    origin : ["https://data-graphicss-vercel.vercel.app"],
     methods : ["GET","POST"],
     credentials : true
   }

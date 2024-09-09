@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/datavisualization?directConnection=true";
+const mongoURI = "mongodb+srv://abhaykevat6355:Abhay%402310@cluster0.mo4gzgk.mongodb.net/datavisualization?retryWrites=true&w=majority&appName=Cluster0";
 
 const connectToMongo = async () => {
     try {

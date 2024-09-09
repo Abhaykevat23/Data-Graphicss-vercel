@@ -8,7 +8,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("api/auth/login", {
+    const response = await fetch("https://data-graphicss-api.vercel.app/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,25 +30,6 @@ function Login() {
   const onChange = (e) => {
     setCredentials({ ...Credentials, [e.target.name]: e.target.value });
   }
-
-  // useEffect(() => {
-  //   const keyDownHandler =async (event) => {
-
-  //     if (event.key === 'Enter') {
-  //       event.preventDefault();
-
-  //       // Call submit function here
-  //       await handleSubmit();
-  //     }
-  //   };
-
-  //   document.addEventListener('keydown', keyDownHandler);
-
-  //   return () => {
-  //     document.removeEventListener('keydown', keyDownHandler);
-  //   };
-  // }, []);
-  
 
   return (
     <>

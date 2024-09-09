@@ -8,7 +8,13 @@ const app = express()
 const port = 5000
 app.use(express.json());
 
-app.use(cors());
+app.use(cors(
+  {
+    origin : ["data-graphicss-vercel.vercel.app"],
+    methods : ["GET","POST"],
+    credentials : true
+  }
+));
 
 //routes
 app.get("/",(req,res)=>{
